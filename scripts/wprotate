@@ -1,0 +1,4 @@
+#! /bin/bash
+WALLPAPERSDIR="/home/justin/Wallpaper/"
+WALLPAPER=`ls -l $WALLPAPERSDIR | sort -R | grep -v total | awk '{print $9}' | tail -1`
+/usr/bin/nitrogen --set-auto $WALLPAPERSDIR$WALLPAPER
