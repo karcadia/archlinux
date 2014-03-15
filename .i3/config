@@ -153,10 +153,10 @@ assign [class="Remmina"] 3: rdp
 assign [class="terminology"] 2: work
 assign [class="Chromium"] 1: web
 
-exec --no-startup-id "nitrogen --set-auto /home/justin/Wallpaper/`ll /home/justin/Wallpaper/ | sort -R | grep -v total | awk '{print $9}' | tail -1`"
-exec --no-startup-id chromium
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id terminology
 exec --no-startup-id remmina
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id chromium
+exec --no-startup-ip wprotate
 
 bindsym $mod+Shift+d exit
